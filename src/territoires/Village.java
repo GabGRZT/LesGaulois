@@ -1,6 +1,7 @@
 package territoires;
 
 import personnages.*;
+
 public class Village {
 	private String nom;
 	private Chef chef;
@@ -23,11 +24,12 @@ public class Village {
 								+ "est à la recherhche d'un autre village" );
 		}	
 	}
-	public void trouverHabitant(int numVillageois) {
-		System.out.println("Je recherche" 
-							+ villageois[numVillageois]
-							+ "Où est il ?");
+	public Gaulois trouverHabitant(int numVillageois) {
+		return villageois[numVillageois];
+							
 	}
+	
+	public afficherVillageois
 	
 	public String getNom() {
 		return nom;
@@ -40,9 +42,13 @@ public class Village {
 	public static void main(String args[]) {
 		Village village = new Village("Village des Irréductible", 30);
 		// Gaulois gaulois = village.trouverHabitant(30); 
-		// 
-		//
-		Chef chef = new chef (Abraracourcix, 6)
+		// On ne peut pas atteindre la valeur 30 dans le tableau
+		// puisque ces indices vont de 0 à 29
+		Chef chef = new Chef("Abraracourix", 6, 1, village);
+		Gaulois asterix = new Gaulois("Asterix", 6);
+//		Gaulois gaulois = village.trouverHabitant(1);
+//		System.out.println(gaulois);
+//		Le tableau est vide pour l'instant donc ça retourne NULL
 		
 		
 	}

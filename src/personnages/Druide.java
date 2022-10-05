@@ -26,7 +26,7 @@ public class Druide {
 	
 	public void preparerPotion() {
 		Random random = new Random();
-		forcePotion = random.nextInt(effetPotionMin, effetPotionMax);
+		forcePotion = random.nextInt(effetPotionMax);
 		if (forcePotion > 8) {
 			System.out.println("J'ai préparé une super potion de force " + forcePotion + ".");
 		}else {
