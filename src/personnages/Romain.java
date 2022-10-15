@@ -15,9 +15,14 @@ public class Romain {
 	}
 	
 	public void parler(String texte) {
+<<<<<<< HEAD
 		System.out.println(prendreParole() + "" + texte + "");
 	}
 	
+=======
+		System.out.println(prendreParole() + "� " + texte + "�");
+	}
+>>>>>>> fde8fb16f0b5bfdd2a9a8426eb78118a22340660
 	public String prendreParole() {
 		return "Le romain " + nom + " : ";
 	}
@@ -36,13 +41,19 @@ public class Romain {
 	}
 	
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		Romain minus = new Romain ("Minus", 6);
+=======
+>>>>>>> fde8fb16f0b5bfdd2a9a8426eb78118a22340660
 		Romain cesar = new Romain("Cesar", 18);
 		System.out.println(cesar.prendreParole());
 		cesar.parler("Bonjour");
 		cesar.recevoirCoup(10);
 		cesar.recevoirCoup(10);
+<<<<<<< HEAD
 		minus.parler("Ne me frappez pas");
 		minus.recevoirCoup(1);
+=======
+>>>>>>> fde8fb16f0b5bfdd2a9a8426eb78118a22340660
 	}
 }
