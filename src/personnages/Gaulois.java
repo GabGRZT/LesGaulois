@@ -1,5 +1,9 @@
 package personnages;
 
+import java.util.Iterator;
+
+import territoires.Musee;
+
 public class Gaulois {
 	
 	private String nom;
@@ -52,6 +56,19 @@ public class Gaulois {
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
 		parler("Merci druide, je sens que ma force est " + effetPotion + " fois decuplee");
+	}
+	
+	public void faireUneDonation(Musee musee) {
+		prendreParole();
+		if (trophees.length != 0) {
+			System.out.println("Je donne tous mes trophees:");
+			for (int i = 0; i<nbTrophees;) {
+				musee.donnerTrophees(new Gaulois("Asterix", 6), this.trophees[i]);
+			}
+			}else {
+			System.out.println("Je n'ai pas de trophees");
+		}
+		
 	}
 	
 	public static void main(String[] args) {

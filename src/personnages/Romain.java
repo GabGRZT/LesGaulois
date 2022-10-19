@@ -17,6 +17,10 @@ public class Romain {
 		return nom;
 	}
 	
+	public int getForce() {
+		return force;
+	}
+	
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "" + texte + "");
 	}
@@ -45,12 +49,12 @@ public class Romain {
 		int oldForce = force;
 		forceCoup = calculresistanceEquipement(forceCoup);
 		force -= forceCoup;
-		// if (force > 0) {
-		// parler("Aïe");
-		// } else {
-		// equipementEjecte = ejecterEquipement();
-		// parler("J'abandonne...");
-		// }
+//		 if (force > 0) {
+//		 parler("Aïe");
+//		 } else {
+//		 equipementEjecte = ejecterEquipement();
+//		 parler("J'abandonne...");
+//		 }
 		switch (force) {
 		case 0:
 			parler("Aïe");
